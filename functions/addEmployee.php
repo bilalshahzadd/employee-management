@@ -16,6 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $result = mysqli_query($conn, $sql);
 
     if ($result == true) {
-        header("location: employeeList.php");
+        header("location: ../employeeList.php");
     }
 }
