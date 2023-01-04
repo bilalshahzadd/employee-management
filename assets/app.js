@@ -1,0 +1,1 @@
+edits = document.getElementsByClassName('edits');
