@@ -9,26 +9,26 @@ include('partials/header.php');
 </div>
 
 <div class="container my-4">
-    <form>
+    <form action="function/addEmployee.php" method="POST">
         <div class="mb-3">
             <label for="name" class="form-label">Name:</label>
-            <input type="text" class="form-control" id="name" aria-describedby="name">
+            <input type="text" class="form-control" id="name" aria-describedby="name" name="name">
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email">
+            <input type="email" class="form-control" id="email" name="email">
         </div>
         <div class="mb-3">
             <label for="num" class="form-label">Phone Number:</label>
-            <input type="number" class="form-control" id="num">
+            <input type="number" class="form-control" id="num" name="phone">
         </div>
         <div class="mb-3">
             <label for="age" class="form-label">Age:</label>
-            <input type="age" class="form-control" id="age">
+            <input type="age" class="form-control" id="age" name="age">
         </div>
         <div class="mb-3">
-            <label for="picture" class="form-label">Picture:</label>
-            <input type="email" class="form-control" id="picture">
+            <label for="designation" class="form-label">Designation:</label>
+            <input type="age" class="form-control" id="designation" name="designation">
         </div>
         <button type="submit" class="btn btn-primary">Save Info</button>
     </form>
