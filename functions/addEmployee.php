@@ -10,4 +10,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $phone = $_POST['phone'];
     $age = $_POST['age'];
     $designation = $_POST['designation'];
+
+    // sql query to be executed 
+    $sql = "INSERT INTO `employee-list` (`name`, `email`, `phone`, `age`, `designation`) VALUES ('$name', '$email', '$phone', '$age', '$designation')";
+    $result = mysqli_query($conn, $sql);
+
+    if ($result == true) {
+        header("location: employeeList.php");
+    }
 }
